@@ -1,0 +1,34 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Simple Vimeo Downloader",
+  "version": "1.2.3",
+  "description": "Extension for download video and subtitles from Vimeo by injecting download buttons directly into the Vimeo player.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_title": "Inject Simple Vimeo Downloader buttons",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "*://vimeo.com/*",
+    "*://player.vimeo.com/*"
+  ],
+  "optional_permissions": [
+    "identity",
+    "*://*.devlab21.com/*"
+  ],
+  "web_accessible_resources": [
+    "inject_icon.svg"
+  ]
+}

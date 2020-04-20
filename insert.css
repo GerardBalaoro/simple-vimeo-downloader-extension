@@ -1,0 +1,44 @@
+.__svd-logo__ {
+  margin-bottom: 0 !important;
+}
+
+.__svd-logo__ > img {
+  width: 3.6em;
+  height: 3.6em;
+}
+
+.__svd-download__ {
+  margin-bottom: 0.1em !important;
+}
+
+.__svd-download__ > a > button {
+  height: 1.6em !important;
+
+  color: white;
+}
+
+.__svd-download__ > a.attention > button {
+  animation-name: attention;
+  animation-timing-function: linear;
+  animation-duration: 400ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes attention {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
+.__svd-group__ {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.__svd-column__ {
+  margin-left: 1px;
+}
